@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Basic info of website-->   
+    <!-- press control + / to comment -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--for adapting this page to be accessible for various devices: smartphones-->
+    <meta name="description" content="This page is for practicing HTML creating">
+    <meta name="author" content="NIRUN Weerawit">
+    <meta name="keywords" content="html css javascript">   
+    <!--Title of this website-->
+    <title>HTML Practice</title> 
+    <style>
+        nav{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(137, 223, 223);
+            opacity: 100%;
+            position: fixed;
+            text-align: center; 
+            font-family: cursive;
+        }
+        body{
+            background-color: #DCF2F1;
+            background-image: url('image/car_doodle_slope.png');
+            /* background-image: image('image\car-doodle-medium.jpg'); */
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            
+            background-size: 100%; /* This property ensures that the background image covers the entire element */
+            background-position: center; /* This property centers the background image */
+            background-repeat: repeat; /* This property prevents the background image from repeating */
+            background-attachment:fixed;
+            
+        }
+        main{
+            
+            & h1{
+            text-align: center;
+            font-weight: bold;
+            background: none;
+            text-decoration: underline;
+            font-weight: bolder;
+            font-size: 40px;
+            }
+        }
+        .header{
+            font-size:xx-large;
+            text-align: center;
+        }
+        .banner {
+            background-color: #0F1035;
+            height:auto;
+            width:100%;
+            /* border: 1px solid red; */
+            & .banner-link{
+                background: none;
+                /* margin: 10px; */
+                padding: 20px;
+                text-align: center;
+            }
+            & .banner-head{
+                background: none;
+                /* margin: 10px; */
+                padding-top: 10px;
+            }
+            & h1{
+                font-size: 35px;
+            }
+        }
+        
+        .description{
+            background-image: linear-gradient(to right, #fff , #0F1035    );
+            font-size:x-large;
+            text-align: center;
+            margin: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .box{
+            border: 5px solid hsl(192, 57%, 30%);
+            background-color: #7FC7D9;
+            font-size: 20px;
+            border-radius: 15px;
+    
+        }
+        .header-box{
+            color: antiquewhite;
+            background-color: #0F1035;
+            border: 2px solid #7FC7D9;
+            border-radius: 20px 60px 20px 60px;
+            padding: 30px;
+            margin-top: 50px;
+        }
+        .small-box{
+            background-color: #7FC7D9;
+            font-size: 20px;
+            margin: 10px;
+            text-align: justify;
+            
+        }
+
+        h1{
+            text-align: center;
+            font-weight: bold;
+            background: none;
+            text-decoration: underline;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+        li{
+            font-size: 1.5em;
+        }
+        a{
+            color: hsl(10, 80%, 50%);
+            background-color: #0F1035;
+            font-size: large;
+            
+        }
+        .navlink{
+            color: #0F1035;
+            background: none;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <br>
+        <a class="navlink" href="First_homepage.html">Home page</a>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;
+        <a class="navlink" href="#aboutme">About me</a>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;
+        <a class="navlink" href="#tutoring">Tutoring (only Thai)</a>
+    </nav>
+    <br> <br>
+    <h1 class="header-box" style="font-size: 60px;">HTML 5 BASIC LECTURE NOTES</h1> <!--topic title-->
+    <p class="description" >&nbsp;This page is a collective knowledge of HTML, created by NIRUN, Weerawit</p>
+    
+    <main>
+        <section class="box">
+            <h1>Example of Tag for writing</h1>
+            <div class="small-box">
+                <ol> 
+                    <li><small>small paragraph</small> </li>
+                    <li><b>strong paragraph</b></li>
+                    <li><i>italic paragraph</i></li>
+                    <li><u>underline paragraph</u></li>
+                    <li><del>unwanted paragraph</del></li>
+                    <li><mark>highlighted paragraph</mark></li>
+                    <li><b>E = mc<sup>2</sup></b></li>
+                    <li><b>H<sub>2</sub>O</b></li>
+                </ol>
+            </div>
+            
+        </section>
+        <hr> <!-- for separating section -->
+        <section class="box">
+            <h1>Example of using Paragraph Tags</h1>
+            <h1>Sushi restaurant</h1>
+            <p class="small-box" style="text-align: justify;"><strong>It is located in Nagoya station</strong> 
+                Lorem ipsum dolor sit
+                <br> <b>for creating new line. </b>
+                amet consectetur, adipisicing elit. Sed eos,
+                quaerat placeat modi iusto totam adipisci qu
+                ae, quia expedita repellendus cumque soluta nat
+                us deleniti voluptas, eius magni nulla. Qui, n
+                atus.</p>
+        </section>
+        
+        <hr> <!-- for separating section -->
+        <section class="box">
+            <h1>Tonkatsu restaurant</h1>
+            <p class="small-box"><i>Lorem ipsum dolor sit 
+                amet consectetur adipisicing elit.
+                Harum, quisquam.</i>
+            </p> 
+        </section>
+        
+    </main>
+
+    <hr> <!-- for separating section -->
+
+    <footer>
+        <div class="banner">
+            <div class="banner-head">
+                <h1 style="color: #DCF2F1;">Example of placing links</h1>
+            </div>
+                <!-- internal link => link to webpage within the same file or folder -->
+            <div class="banner-link">  
+                <a href="page2.html" target="_self"> Page2</a>
+                <a href="page3.html" target="_self"> Page3</a>
+                <a href="shopping/shop.html" target="_self"> Shopping</a>
+                <br>
+                <a href="form.html" target="_self">form</a>
+                <a href="class&id.html" target="_self">class&id</a>
+                <!-- external link => link to external webpage -->
+                <br><a  href="http://youtube.com" target="_blank" >Open Youtube</a>
+                <br><a  href="sementic.html" target="_self">Sementic</a>
+                <br><a  href="http://www.google.com" >click here to change this page to Google</a>
+                <br> <a href="http://www.google.com" target="_blank">click here to open new tab to Google</a>                   
+                <br> <a href="chatgpt.html" target="_self">Chatgpt</a>
+            </div>
+        </div>
+    </footer>
+    
+  
+
+
+</body>
+</html>
+
