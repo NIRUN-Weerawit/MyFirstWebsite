@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    /* font-family: cursive; */
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    & .header-container{
+        & .header{
+            background-color: hsla(234, 22%, 91%, 0.795) ;
+            /* background-color: transparent; */
+            font-size: x-large;
+            /* height: 100vb; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & span{
+                color: red;
+                font-weight: 900;
+                font-style: italic;
+                font-size: xx-large;
+            }
+        }
+    
+        & .header-description{
+            background-color: hsla(234, 22%, 91%, 0.795);
+            /* border: 1px solid salmon; */
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 40px;
+            text-align: justify;
+        }
+        
+    }
+    
+}
+
+
+
+body {
+    background-color: hsla(234, 22%, 91%, 0.795);
+    background-image: url('image/small-car-doodle-window-size-ver-2.png');
+    background-size: 100%; /* This property ensures that the background image covers the entire element */
+    background-position:top; /* This property centers the background image */
+    background-repeat: repeat; /* This property prevents the background image from repeating */
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 80px;
+    & .section-container{
+        padding: 40px;
+        background-color: hsla(234, 22%, 91%, 0.795);
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to right,#3ca8aa, #bceaeb);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .banner-logo{
+        width: 40%;
+        height: 100%;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        & .logo{
+            width: 150px;
+            height: 150px;
+            margin-left: 72px;
+            margin-top: 17px;
+        }
+    }
+    & .banner-container{
+        width: 60%;
+        margin-right: 0px;
+        height: 100%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        background: none;
+        & a{
+            color: hsl(170, 50%, 32%);
+            font-weight: 700;
+            height: 100%;
+            padding: 8px;
+            width:fit-content;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        & a:hover{
+            height: 30%;
+            width: max-content;
+            background-color: #638081a3;
+            border-radius: 4px;
+        }
+    }
+}
+
+footer {
+    
+    width: 100%;
+    height: 150px;
+    margin: 0;
+
+    background-image: linear-gradient(to right,#3ca8aa, #bceaeb );
+
+    & .footer-container{
+        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-between;
+
+        & .footer-container-header{
+            color: #ecf4f4 ;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left:    10% ;
+            width: 20%;
+            
+        }
+
+        & .footer-container-logo{
+            width: 40%;
+            margin-right: 10%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+       
+    }
+}

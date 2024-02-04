@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    /* font-family: cursive; */
+}
+.container {
+    width: 100%;
+    height: auto;
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    & .header-container{
+        border: 1px solid   orange;
+        
+        & .header{
+            background-color: #FFB996e8;
+            /* background-color: transparent; */
+            font-size: x-large;
+            border: 2px solid green;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & span{
+                color: red;
+                font-style: italic;
+                font-size: xx-large;
+            }
+        }
+    
+        & .header-description{
+            background-color: #756ab6ef ;
+            border: 1px solid purple;
+            font-size: medium;
+            padding: 40px;
+            text-align: justify;
+        }
+        
+    }
+    
+}
+
+
+
+body {
+    background-color: blanchedalmond;
+    background-image: url('image/car_doodle_slope.png');
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 80px;
+    & .section-container{
+        padding: 40px;
+        background-color: #f6d6d6f6;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 80px;
+    border: 2px solid black;
+    background-image: linear-gradient(to right,#80BCBD, #fff );
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .banner-logo{
+        width: 60px;
+        height: 50%;
+        margin-left: 10%;
+        border: 1px solid   blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & .banner-container{
+        width: 60%;
+        margin-right: 5%;
+        height: 100%;
+        border: 2px solid red;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        background: none;
+        
+        & a{
+            color: hsl(170, 50%, 32%);
+            font-weight: 700;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border: 1px solid purple;
+            text-decoration: none;
+        }
+        
+    }
+}
+
+footer {
+    color: green;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    border: 2px solid black;
+    background-image: linear-gradient(to right, #fff,#80BCBD, #fff );
+
+    & .footer-container{
+        border: 2px solid red;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-between;
+        & .footer-container-header{
+            border: 5px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left:    10% ;
+            width: 20%;
+            
+        }
+
+        & .footer-container-logo{
+            width: 40%;
+            margin-right: 10%;
+            border: 5px  solid  black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+       
+    }
+}
